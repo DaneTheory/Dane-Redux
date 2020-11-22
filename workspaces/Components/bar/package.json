@@ -1,0 +1,10 @@
+{
+  "name": "@dane-redux/bar",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "index.js",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  }
+}

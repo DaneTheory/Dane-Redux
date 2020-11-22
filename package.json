@@ -1,13 +1,14 @@
 {
-  "name": "with-yarn-workspaces",
+  "name": "@dane-redux/monorepo",
+  "version": "1.0.0",
+  "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "workspaces/**/*"
   ],
   "scripts": {
-    "dev": "yarn --cwd packages/web-app dev",
-    "build": "yarn --cwd packages/web-app build",
-    "start": "yarn --cwd packages/web-app start"
-  },
-  "license": "MIT"
+    "dev": "NODE_ENV=development yarn --cwd workspaces/Apps/web dev",
+    "start": "NODE_ENV=production yarn --cwd workspaces/Apps/web start",
+    "build": "yarn --cwd workspaces/Apps/web build"
+  }
 }
